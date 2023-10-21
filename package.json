@@ -3,7 +3,7 @@
   "description": "Formfunction frontend and backend projects",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:formfunction-hq/formfn-monorepo.git",
+  "repository": "https://github.com/AJO-Ltd/form_ajo",
   "author": "matt@formfunction.xyz",
   "private": true,
   "scripts": {
