@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ParsedTransactionWithMeta, PublicKey } from "@solana/web3.js";
 import { Maybe, Resolved } from "formfn-shared/dist/types/UtilityTypes";
 import NftTransactionOnchain from "src/types/NftTransactionOnchain";

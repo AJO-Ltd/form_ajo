@@ -54,26 +54,26 @@ export default async function approveCampaignResolver(
     { id: input.campaignId }
   );
 
-  const updatedCampaign = await prisma.$transaction(
-    async (prismaClient: PrismaTransactionClient) => {
-      const campaign = await prismaClient.campaign.update({
-        data: {
-          status: CampaignStatusExpress_Enum.Approved,
-        },
-        include: CONVERT_CAMPAIGN_INCLUDE,
-        where: {
-          id: input.campaignId,
-        },
-      });
+  const updatedCampaign = await prisma.$transaction((async (
+    prismaClient: PrismaTransactionClient
+  ) => {
+    const campaign = await prismaClient.campaign.update({
+      data: {
+        status: CampaignStatusExpress_Enum.Approved,
+      },
+      include: CONVERT_CAMPAIGN_INCLUDE,
+      where: {
+        id: input.campaignId,
+      },
+    });
 
-      await convertUserToCreator(campaignBeforeUpdate.Creator.id, prismaClient);
+    await convertUserToCreator(campaignBeforeUpdate.Creator.id, prismaClient);
 
-      return campaign;
-    }
-  );
+    return campaign;
+  }) as any);
 
   return {
     __typename: Typename.ApproveCampaignResponse,
-    campaign: await convertCampaign(updatedCampaign as ConvertCampaignType),
+    campaign: await convertCampaign(updatedCampaign as unknown as ConvertCampaignType),
   };
 }

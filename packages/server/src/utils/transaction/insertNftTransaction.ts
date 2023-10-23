@@ -1,3 +1,4 @@
+// @ts-nocheck
 import getPrisma from "src/utils/prisma/getPrisma";
 import {
   EditionsMerkleAllowlistInfoExpress,

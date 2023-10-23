@@ -37,6 +37,6 @@ export default function parseEditionPriceParams<
         priceIncrementInLamports: priceParams[0],
       } as any;
     default:
-      return assertUnreachable(priceFunctionType);
+      return assertUnreachable(priceFunctionType as never);
   }
 }

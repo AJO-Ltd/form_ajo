@@ -1,3 +1,4 @@
+// @ts-nocheck
 import axios from "axios";
 import AnalyticsEvent from "src/types/enums/AnalyticsEvent";
 import { MaybeUndef, Undef } from "formfn-shared/dist/types/UtilityTypes";

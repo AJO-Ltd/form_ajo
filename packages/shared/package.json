@@ -18,9 +18,7 @@
     "test:coverage": "jest --coverage --passWithNoTests"
   },
   "dependencies": {
-    "@formfunction-hq/formfunction-auction-house":"https://github.com/AJO-Ltd/auction-house.git#kofi_local_fix",
-    "@formfunction-hq/formfunction-candy-machine":"https://github.com/AJO-Ltd/candy-machine.git#kofi_local_fix",
-    "@formfunction-hq/formfunction-gumdrop":"https://github.com/AJO-Ltd/gumdrop.git#kofi_local_fix",
+   
     "@metaplex-foundation/mpl-token-metadata": "2.7.0",
     "@solana/spl-token": "^0.3.7",
     "@solana/web3.js": "1.73.0",

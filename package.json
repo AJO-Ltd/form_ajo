@@ -32,6 +32,11 @@
     "notify-frontend": "curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"Frontend deployment failed. Check status at https://dash.cloudflare.com/1c303446d16283941adc8055b1763144/pages/view/formfn-monorepo\"}' https://hooks.slack.com/services/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",
     "prepare": "husky install"
   },
+  "dependencies": {
+    "@formfunction-hq/formfunction-auction-house":"file:../auction-house",
+    "@formfunction-hq/formfunction-candy-machine":"file:../candy-machine",
+    "@formfunction-hq/formfunction-gumdrop":"file:../gumdrop"
+  },
   "workspaces": [
     "packages/server",
     "packages/shared",
@@ -45,7 +50,11 @@
     "@types/react": "17.0.2",
     "@types/react-dom": "17.0.2",
     "@solana/web3.js": "1.73.0",
-    "@solana/spl-token": "0.3.7"
+    "@solana/spl-token": "0.3.7",
+    "@prisma/client": "4.4.0",
+    "@prisma/engines": "4.12.0",
+    "@prisma/engines-version": "4.12.0-67.659ef412370fa3b41cd7bf6e94587c1dfb7f67e7",
+    "@prisma/instrumentation": "4.10.1"
   },
   "packageManager": "yarn@3.2.3"
 }

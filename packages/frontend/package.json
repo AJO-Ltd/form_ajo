@@ -34,9 +34,7 @@
   },
   "dependencies": {
     "@crossmint/client-sdk-react-ui": "^0.1.8-alpha.0", 
-    "@formfunction-hq/formfunction-auction-house":"https://github.com/AJO-Ltd/auction-house.git#kofi_local_fix",
-    "@formfunction-hq/formfunction-candy-machine":"https://github.com/AJO-Ltd/candy-machine.git#kofi_local_fix",
-    "@formfunction-hq/formfunction-gumdrop":"https://github.com/AJO-Ltd/gumdrop.git#kofi_local_fix",
+   
     "@google/model-viewer": "^2.1.1",
     "@hookform/resolvers": "^2.8.4",
     "@mantine/core": "^5.10.3",

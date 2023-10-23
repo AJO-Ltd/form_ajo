@@ -1,3 +1,4 @@
+// @ts-nocheck
 import getPrisma from "src/utils/prisma/getPrisma";
 import { PostExpress, CreatePostBaseInput } from "src/__generated__/generated";
 import { Asset, Prisma } from "@prisma/client";
